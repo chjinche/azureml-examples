@@ -1,0 +1,16 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT License.
+
+name: project_environment
+channels:
+  - defaults
+dependencies:
+  - python=3.8.12
+  - pip=20.2
+  - pip:
+    - --extra-index-url https://azuremlsdktestpypi.azureedge.net/azureml-v2-cli-e2e-test/72721055
+    - azure-ai-ml==0.0.72721055 
+    - mldesigner
+    - mlflow
+    - azureml-mlflow
+    - azure-identity
